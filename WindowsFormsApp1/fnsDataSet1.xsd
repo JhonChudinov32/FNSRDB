@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fnsDataSet1" targetNamespace="http://tempuri.org/fnsDataSet1.xsd" xmlns:mstns="http://tempuri.org/fnsDataSet1.xsd" xmlns="http://tempuri.org/fnsDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fnsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fnsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.fnsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RICUSNTableAdapter" GeneratorDataComponentClassName="RICUSNTableAdapter" Name="RICUSN" UserDataComponentName="RICUSNTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fnsConnectionString (Settings)" DbObjectName="fns.dbo.RICUSN" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT РИЦ, ИНН, УСН, Год FROM dbo.RICUSN</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="РИЦ" DataSetColumn="РИЦ" />
+              <Mapping SourceColumn="ИНН" DataSetColumn="ИНН" />
+              <Mapping SourceColumn="УСН" DataSetColumn="УСН" />
+              <Mapping SourceColumn="Год" DataSetColumn="Год" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fnsDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fnsDataSet1" msprop:Generator_UserDSName="fnsDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RICUSN" msprop:Generator_TableClassName="RICUSNDataTable" msprop:Generator_TableVarName="tableRICUSN" msprop:Generator_TablePropName="RICUSN" msprop:Generator_RowDeletingName="RICUSNRowDeleting" msprop:Generator_RowChangingName="RICUSNRowChanging" msprop:Generator_RowEvHandlerName="RICUSNRowChangeEventHandler" msprop:Generator_RowDeletedName="RICUSNRowDeleted" msprop:Generator_UserTableName="RICUSN" msprop:Generator_RowChangedName="RICUSNRowChanged" msprop:Generator_RowEvArgName="RICUSNRowChangeEvent" msprop:Generator_RowClassName="RICUSNRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="РИЦ" msprop:Generator_ColumnVarNameInTable="columnРИЦ" msprop:Generator_ColumnPropNameInRow="РИЦ" msprop:Generator_ColumnPropNameInTable="РИЦColumn" msprop:Generator_UserColumnName="РИЦ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ИНН" msprop:Generator_ColumnVarNameInTable="columnИНН" msprop:Generator_ColumnPropNameInRow="ИНН" msprop:Generator_ColumnPropNameInTable="ИННColumn" msprop:Generator_UserColumnName="ИНН" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="УСН" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnУСН" msprop:Generator_ColumnPropNameInRow="УСН" msprop:Generator_ColumnPropNameInTable="УСНColumn" msprop:Generator_UserColumnName="УСН" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Год" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_UserColumnName="Год" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

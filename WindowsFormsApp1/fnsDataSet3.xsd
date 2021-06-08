@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fnsDataSet3" targetNamespace="http://tempuri.org/fnsDataSet3.xsd" xmlns:mstns="http://tempuri.org/fnsDataSet3.xsd" xmlns="http://tempuri.org/fnsDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fnsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fnsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.fnsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RICNALOGTableAdapter" GeneratorDataComponentClassName="RICNALOGTableAdapter" Name="RICNALOG" UserDataComponentName="RICNALOGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fnsConnectionString (Settings)" DbObjectName="fns.dbo.RICNALOG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT РИЦ, Наименование, ИНН, [Наименование налога], summUplnalog, Год FROM dbo.RICNALOG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="РИЦ" DataSetColumn="РИЦ" />
+              <Mapping SourceColumn="Наименование" DataSetColumn="Наименование" />
+              <Mapping SourceColumn="ИНН" DataSetColumn="ИНН" />
+              <Mapping SourceColumn="Наименование налога" DataSetColumn="Наименование налога" />
+              <Mapping SourceColumn="summUplnalog" DataSetColumn="summUplnalog" />
+              <Mapping SourceColumn="Год" DataSetColumn="Год" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fnsDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fnsDataSet3" msprop:Generator_UserDSName="fnsDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RICNALOG" msprop:Generator_TableClassName="RICNALOGDataTable" msprop:Generator_TableVarName="tableRICNALOG" msprop:Generator_TablePropName="RICNALOG" msprop:Generator_RowDeletingName="RICNALOGRowDeleting" msprop:Generator_RowChangingName="RICNALOGRowChanging" msprop:Generator_RowEvHandlerName="RICNALOGRowChangeEventHandler" msprop:Generator_RowDeletedName="RICNALOGRowDeleted" msprop:Generator_UserTableName="RICNALOG" msprop:Generator_RowChangedName="RICNALOGRowChanged" msprop:Generator_RowEvArgName="RICNALOGRowChangeEvent" msprop:Generator_RowClassName="RICNALOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="РИЦ" msprop:Generator_ColumnVarNameInTable="columnРИЦ" msprop:Generator_ColumnPropNameInRow="РИЦ" msprop:Generator_ColumnPropNameInTable="РИЦColumn" msprop:Generator_UserColumnName="РИЦ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Наименование" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" msprop:Generator_UserColumnName="Наименование" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ИНН" msprop:Generator_ColumnVarNameInTable="columnИНН" msprop:Generator_ColumnPropNameInRow="ИНН" msprop:Generator_ColumnPropNameInTable="ИННColumn" msprop:Generator_UserColumnName="ИНН" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Наименование_x0020_налога" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnНаименование_налога" msprop:Generator_ColumnPropNameInRow="Наименование_налога" msprop:Generator_ColumnPropNameInTable="Наименование_налогаColumn" msprop:Generator_UserColumnName="Наименование налога" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="summUplnalog" msprop:Generator_ColumnVarNameInTable="columnsummUplnalog" msprop:Generator_ColumnPropNameInRow="summUplnalog" msprop:Generator_ColumnPropNameInTable="summUplnalogColumn" msprop:Generator_UserColumnName="summUplnalog" type="xs:float" minOccurs="0" />
+              <xs:element name="Год" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_UserColumnName="Год" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

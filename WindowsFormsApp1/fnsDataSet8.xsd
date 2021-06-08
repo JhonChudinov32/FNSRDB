@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fnsDataSet8" targetNamespace="http://tempuri.org/fnsDataSet8.xsd" xmlns:mstns="http://tempuri.org/fnsDataSet8.xsd" xmlns="http://tempuri.org/fnsDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fnsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fnsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.fnsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="finotchetTableAdapter" GeneratorDataComponentClassName="finotchetTableAdapter" Name="finotchet" UserDataComponentName="finotchetTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fnsConnectionString (Settings)" DbObjectName="fns.dbo.finotchet" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT РИЦ, Наименование, ИНН, БАЛАНС, [Финансовый результат ], Год FROM dbo.finotchet</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="РИЦ" DataSetColumn="РИЦ" />
+              <Mapping SourceColumn="Наименование" DataSetColumn="Наименование" />
+              <Mapping SourceColumn="ИНН" DataSetColumn="ИНН" />
+              <Mapping SourceColumn="БАЛАНС" DataSetColumn="БАЛАНС" />
+              <Mapping SourceColumn="Финансовый результат " DataSetColumn="Финансовый результат " />
+              <Mapping SourceColumn="Год" DataSetColumn="Год" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fnsDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fnsDataSet8" msprop:Generator_UserDSName="fnsDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="finotchet" msprop:Generator_TableClassName="finotchetDataTable" msprop:Generator_TableVarName="tablefinotchet" msprop:Generator_TablePropName="finotchet" msprop:Generator_RowDeletingName="finotchetRowDeleting" msprop:Generator_RowChangingName="finotchetRowChanging" msprop:Generator_RowEvHandlerName="finotchetRowChangeEventHandler" msprop:Generator_RowDeletedName="finotchetRowDeleted" msprop:Generator_UserTableName="finotchet" msprop:Generator_RowChangedName="finotchetRowChanged" msprop:Generator_RowEvArgName="finotchetRowChangeEvent" msprop:Generator_RowClassName="finotchetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="РИЦ" msprop:Generator_ColumnVarNameInTable="columnРИЦ" msprop:Generator_ColumnPropNameInRow="РИЦ" msprop:Generator_ColumnPropNameInTable="РИЦColumn" msprop:Generator_UserColumnName="РИЦ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Наименование" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" msprop:Generator_UserColumnName="Наименование" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ИНН" msprop:Generator_ColumnVarNameInTable="columnИНН" msprop:Generator_ColumnPropNameInRow="ИНН" msprop:Generator_ColumnPropNameInTable="ИННColumn" msprop:Generator_UserColumnName="ИНН" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="БАЛАНС" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnБАЛАНС" msprop:Generator_ColumnPropNameInRow="БАЛАНС" msprop:Generator_ColumnPropNameInTable="БАЛАНСColumn" msprop:Generator_UserColumnName="БАЛАНС" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Финансовый_x0020_результат_x0020_" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФинансовый_результат_" msprop:Generator_ColumnPropNameInRow="Финансовый_результат_" msprop:Generator_ColumnPropNameInTable="Финансовый_результат_Column" msprop:Generator_UserColumnName="Финансовый результат " minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Год" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_UserColumnName="Год" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

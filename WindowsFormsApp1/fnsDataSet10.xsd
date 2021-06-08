@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fnsDataSet10" targetNamespace="http://tempuri.org/fnsDataSet10.xsd" xmlns:mstns="http://tempuri.org/fnsDataSet10.xsd" xmlns="http://tempuri.org/fnsDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fnsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fnsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.fnsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DOCHODRASHODTableAdapter" GeneratorDataComponentClassName="DOCHODRASHODTableAdapter" Name="DOCHODRASHOD" UserDataComponentName="DOCHODRASHODTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fnsConnectionString (Settings)" DbObjectName="fns.dbo.DOCHODRASHOD" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT РИЦ, ИНН, [Сумма доходов], [Сумма Расходов], Год FROM dbo.DOCHODRASHOD</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="РИЦ" DataSetColumn="РИЦ" />
+              <Mapping SourceColumn="ИНН" DataSetColumn="ИНН" />
+              <Mapping SourceColumn="Сумма доходов" DataSetColumn="Сумма доходов" />
+              <Mapping SourceColumn="Сумма Расходов" DataSetColumn="Сумма Расходов" />
+              <Mapping SourceColumn="Год" DataSetColumn="Год" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fnsDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fnsDataSet10" msprop:Generator_UserDSName="fnsDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DOCHODRASHOD" msprop:Generator_TableClassName="DOCHODRASHODDataTable" msprop:Generator_TableVarName="tableDOCHODRASHOD" msprop:Generator_TablePropName="DOCHODRASHOD" msprop:Generator_RowDeletingName="DOCHODRASHODRowDeleting" msprop:Generator_RowChangingName="DOCHODRASHODRowChanging" msprop:Generator_RowEvHandlerName="DOCHODRASHODRowChangeEventHandler" msprop:Generator_RowDeletedName="DOCHODRASHODRowDeleted" msprop:Generator_UserTableName="DOCHODRASHOD" msprop:Generator_RowChangedName="DOCHODRASHODRowChanged" msprop:Generator_RowEvArgName="DOCHODRASHODRowChangeEvent" msprop:Generator_RowClassName="DOCHODRASHODRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="РИЦ" msprop:Generator_ColumnVarNameInTable="columnРИЦ" msprop:Generator_ColumnPropNameInRow="РИЦ" msprop:Generator_ColumnPropNameInTable="РИЦColumn" msprop:Generator_UserColumnName="РИЦ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ИНН" msprop:Generator_ColumnVarNameInTable="columnИНН" msprop:Generator_ColumnPropNameInRow="ИНН" msprop:Generator_ColumnPropNameInTable="ИННColumn" msprop:Generator_UserColumnName="ИНН" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сумма_x0020_доходов" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnСумма_доходов" msprop:Generator_ColumnPropNameInRow="Сумма_доходов" msprop:Generator_ColumnPropNameInTable="Сумма_доходовColumn" msprop:Generator_UserColumnName="Сумма доходов" type="xs:int" minOccurs="0" />
+              <xs:element name="Сумма_x0020_Расходов" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnСумма_Расходов" msprop:Generator_ColumnPropNameInRow="Сумма_Расходов" msprop:Generator_ColumnPropNameInTable="Сумма_РасходовColumn" msprop:Generator_UserColumnName="Сумма Расходов" type="xs:int" minOccurs="0" />
+              <xs:element name="Год" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_UserColumnName="Год" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
